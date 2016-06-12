@@ -19,6 +19,9 @@
 ## Drawring shapes to the screen
 - https://iworkautomation.com/keynote/shape-line-shape.html
 
+## Finding pixel colors (RGB)
+- http://macscripter.net/viewtopic.php?id=26833
+
 
 # UI Programming in AppleScript
 ## Activating menu-items
