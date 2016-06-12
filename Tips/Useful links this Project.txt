@@ -40,3 +40,4 @@
 # Other scripting languages which are useful for use in ScreenFlow
 - https://www.keyboardmaestro.com/main/
 - http://www.hammerspoon.org/
+- http://www.sikuli.org - Not fast, but could be useful in some cases! (May be useful for Pixel/Image search)
