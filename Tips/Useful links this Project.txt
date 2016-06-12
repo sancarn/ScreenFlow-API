@@ -1,0 +1,42 @@
+# Using GIT
+## Adding images to Github
+- http://solutionoptimist.com/2013/12/28/awesome-github-tricks/
+- http://stackoverflow.com/questions/14494747/add-images-to-readme-md-on-github
+
+
+# General AppleScript:
+## How to program functions and sub-routines a.k.a. "handlers":
+- http://macscripter.net/viewtopic.php?id=24727
+- http://macscripter.net/viewtopic.php?id=24738
+- http://www.macscripter.net/viewtopic.php?id=24743
+- https://developer.apple.com/library/mac/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/UseHandlersFunctions.html#//apple_ref/doc/uid/TP40016239-CH52-SW1
+- https://developer.apple.com/library/mac/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_about_handlers.html#//apple_ref/doc/uid/TP40000983-CH206
+- https://developer.apple.com/library/mac/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_handlers.html#//apple_ref/doc/uid/TP40000983-CH7g
+
+## General AppleScript Tutorials:
+- http://macscripter.net/viewforum.php?id=31
+
+## Drawring shapes to the screen
+- https://iworkautomation.com/keynote/shape-line-shape.html
+
+
+# UI Programming in AppleScript
+## Activating menu-items
+- http://hints.macworld.com/article.php?story=20060921045743404
+
+## Finding UI Elements
+- http://lists.apple.com/archives/accessibility-dev/2006/Oct/msg00013.html
+
+## Listing UI Elements
+- http://macscripter.net/viewtopic.php?pid=146743#p146743
+- http://hints.macworld.com/article.php?story=20111208191312748
+
+## Statergies for UI Scripting
+- http://n8henrie.com/2013/03/a-strategy-for-ui-scripting-in-applescript/
+
+## UI Scripting
+- https://developer.apple.com/library/mac/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/AutomatetheUserInterface.html#//apple_ref/doc/uid/TP40016239-CH69-SW1
+
+# Other scripting languages which are useful for use in ScreenFlow
+- https://www.keyboardmaestro.com/main/
+- http://www.hammerspoon.org/
