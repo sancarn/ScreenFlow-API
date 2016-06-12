@@ -46,3 +46,29 @@ These definitions for what buttons can do can be easily observed.
 **The 2nd:**
 
 Use XCode's "Accessibility Inspector". This doesn't have the same format as Applescript but it can be extremely helpful for determining modifyable attributes of ScreenFlow UI element and methods to alter these values also.
+
+## Other useful commands:
+
+Here are some AppleScripts I used while testing:
+
+    set appname to "ScreenFlow" -------------------------- Set this to the App you want to look at
+    
+    set winstuff to "defaultval"
+    set menustuff to "defaultval"
+    
+    tell application appname
+        activate
+    end tell
+    
+    tell application "System Events" to tell process appname
+	    tell window 1 -- Alternatively can use the name of your currently open ScreenFlow document
+		    tell checkbox 1
+		        -- Trigure element
+			    perform action "AXPress"
+		    end tell
+	    end tell
+    end tell
+
+It's also useful that you can chain these into long commands like:
+
+    tell application "System Events" to tell process appname to tell window 1 to tell checkbox 1 to perform action "AXPress"
