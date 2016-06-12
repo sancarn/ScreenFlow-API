@@ -1,0 +1,83 @@
+OS X Yosemite - Version 10.10.5 - ScreenFlow 6.0 (27790)
+
+(*List of buttons in screenflow Audio menu:
+{button 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Close window
+ button 2 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Maximise Window
+ button 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Minimise Window
+ group 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Blank Group?
+ button 4 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Wind scrubber to end of presentation **Used to be resize the canvas area?
+ button 5 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Play button
+ button 6 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Rewind scrubber to start of presentation
+ button 7 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Resize the canvas area
+ checkbox 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"													--		"Headphone Mode" (Far right of navigation pane
+ UI element 10 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"												--		Preview window.
+ group 2 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		Blank Group?
+ 
+ group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"														--		The "Audio" Group
+static text "Audio" of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"									--		The "Audio" label
+ menu button 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		The "Audio Gear" button
+ button "+ Action" of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"									--		The "Add audio action" button
+ 
+ scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"											--		The audio attributes menu 		-- This is where the magic happens
+ pop up button 1 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The "Audio Effect" DropDown button
+ checkbox "Effect:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The "Audio Effect" Checkbox					-- Hint: With Checkboxes value gets set to 1 when checked.
+ static text "Amount:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Audio Effect" Amount Label
+ static text "Filter:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The "Audio Filter" Label
+ static text "Amount:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Audio Filter Amount" Lavel
+ static text "Processing:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Processing: " Label for Smooth Volume Levels
+ slider 1 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Effect Scrollbar"
+ value indicator 1 of slider 1 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"				--		The value of the "Audio Effect" Slider FLOAT from 0 to 1 
+ text field 1 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The value of the "Audio Effect Text Field" STRING from 0% to 100%
+ slider 2 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Volume Slider"
+ value indicator 1 of slider 2 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"				--		The value of the "Audio Volume Slider" FLOAT from 0 to 1 
+ slider 3 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Ducking Scrollbar"
+ value indicator 1 of slider 3 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"				--		The value of the "Audio Ducking Slider" FLOAT from 0 to 1 
+ text field 2 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The value of the "Audio Volume Text Field" STRING from 0% to 100%
+ text field 3 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The value of the "Audio Ducking Text Field" STRING from 0% to 100%
+ static text "Volume:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The "Audio Volume" Label
+ checkbox "Ducking:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The "Audio Ducking" checkbox
+ checkbox "Smooth Volume Levels" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"			--		The "Smooth Volume Levels" Checkbox
+ text field 4 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								-- 		The value of the "Filter Background Noise Text Field" STRING from 0% to 100%
+ checkbox "Remove Background Noise" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"		--		The "Remove background noise" checkbox
+ slider 4 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Filter Background Noise Slider"
+ value indicator 1 of slider 4 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"				--		The value of the "Filter Background Noise Slider" FLOAT from 0 to 1 
+ static text "Audio Mix" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Audio Mix" label -- Named "Mix Output:"
+ UI element 20 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The "Audio Mix AXDisclosure Triangle"			-- AXDisclosure Triangles have a value of either 0 or 1
+ static text "Mix Output:" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Audio Mix" Label
+ checkbox "Mute Audio" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Mute Audio" Checkbox
+ static text "Audio Filters" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"					--		The "Audio Filters" Label
+ UI element 24 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The "Audio Filters AXDisclosure Triangle"
+ button 1 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Add Audio Filter" button
+ static text "2" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The "Audio Mix - 2nd Channel" Label
+ checkbox 6 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Mix - 2nd Channel - Solo" checkbox
+ slider 5 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Mix - 2nd Channel" Slider
+ value indicator 1 of slider 5 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"				--		The value of the "Audio Mix - 2nd Channel" Slider FLOAT 0 to 1
+ text field 5 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The value of the "Audio Mix - 2nd Channel" TextField STRING from 0% to 100%
+ static text "1" of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The "Audio Mix - 1st Channel" Label
+ checkbox 7 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Mix - 1st Channel - Solo" checkbox
+ slider 6 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The "Audio Mix - 1st Channel" Slider
+ value indicator 1 of slider 6 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"				--		The value of the "Audio Mix - 1st Channel" Slider FLOAT 0 to 1
+ text field 6 of scroll area 1 of group 3 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"								--		The value of the "Audio Mix - 1st Channel" TextField STRING from 0% to 100%
+ 
+ scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"													--		The "TimeLine" Scrollarea
+ scroll bar 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		The "Preview" Horizontal Scrollbar
+ value indicator 1 of scroll bar 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The value of the "Preview" Slider FLOAT FROM 0 TO 1
+ button 1 of scroll bar 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The valueIncrementSmall of the "Preview" Slider	- increment = move right
+ button 2 of scroll bar 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The valueDecrementSmall of the "Preview" Slider - decrement = move left
+ button 3 of scroll bar 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The valueIncrementLarge of the "Preview" Slider
+ button 4 of scroll bar 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"							--		The valueDecrementLarge of the "Preview" Slider
+ slider 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"											--		The "Timeline" Horizontal Scrollbar
+ value indicator 1 of slider 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The value of the Timeline Horizontal Slider
+ static text "Duration: 2 secs" of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"						--		The Duration label at the bottom of the screen
+ button 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		"Timeline - Zoom Out" Button
+ button 2 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		"Timeline - Zoom In" Button
+ pop up button 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"									--		The popup "+" button in the bottom left hand corner of the screen
+ checkbox 1 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		The "Show/Hide Waveforms" checkbox
+ checkbox 2 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		The "Show/Hide thumbnails" checkbox
+ checkbox 3 of scroll area 1 of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		The "On/Off clip snapping" checkbox
+ 
+image "TestSoundToStereo" of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"										--		The active document's title-picture
+ menu button "Edited" of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"											--		The "Edited" Title-Button
+ static text "—" of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"												--		The "-" before the "Edited title-button"
+ static text "TestSoundToStereo" of window "TestSoundToStereo" of application process "ScreenFlow" of application "System Events"}									--		The name of the currently active Screenflow project.
+*)
