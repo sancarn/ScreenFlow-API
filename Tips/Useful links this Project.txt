@@ -40,6 +40,9 @@
 ## UI Scripting
 - https://developer.apple.com/library/mac/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/AutomatetheUserInterface.html#//apple_ref/doc/uid/TP40016239-CH69-SW1
 
+## Optaining current playhead time by reading RAM?
+- https://newagesoldier.com/cheat-engine-mac-os/
+
 # Other scripting languages which are useful for use in ScreenFlow
 - https://www.keyboardmaestro.com/main/
 - http://www.hammerspoon.org/
