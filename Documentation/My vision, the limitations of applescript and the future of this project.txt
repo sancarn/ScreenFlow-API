@@ -6,94 +6,77 @@ If I were to give a very brief overview of this project it would be:
 For more details on this vision see below:
 
 * MY VISION: THE OBJECT MODEL
-One of the most important parts of any API/functions library is that it needs to have a good structure. It needs to be flexible, easy to use and organised. My original vision was to have it organised in a hierarchy. For example, here’s the Video and Audio menus:
+One of the most important parts of any API/functions library is that it needs to have a good structure. It needs to be flexible, easy to use and organised. My original vision was to have it organised in a hierarchy. For example, here’s the Video and Audio menus (2 out of 10 menus):
 
 ScreenFlow
 	Video
 		Pos
 			X
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 			Y
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 		Rot
 			X
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 			Y
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 			Z
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 		Opacity
 			Set()
-			Increment()
-			Decrement()
+			Get()
 		Crop
 			Left
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 			Right
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 			Bottom
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 			Top
 				Set()
-				Increment()
-				Decrement()
+				Get()
 		Reflection
 			Enable()
 			Disable()
 			Value
 				Set()
-				Increment()
-				Decrement()	
+				Get()
 		Shadow()
 			Enable()
 			Disable()
 			Value
 				Angle
 					Set()
-					Increment()
-					Decrement()
+					Get()
 				Color
-					Set
+					Set()
+					Get()
 				Offset
 					Set()
-					Increment()
-					Decrement()
+					Get()
 				Opacity
 					Set()
-					Increment()
-					Decrement()
+					Get()
 				BlurSize
 					Set()
-					Increment()
-					Decrement()
+					Get()
 		Saturation
 			Set()
-			Increment()
-			Decrement()
+			Get()
 		Brightness
 			Set()
-			Increment()
-			Decrement()
+			Get()
 		Contrast
 			Set()
-			Increment()
-			Decrement()
+			Get()
 		Filters
 			params…
 
@@ -106,24 +89,20 @@ ScreenFlow
 		Reset()
 		Volume
 			Set()
-			Increment()
-			Decrement()
+			Get()
 		Ducking
 			Set()
-			Increment()
-			Decrement()
+			Get()
 			Enable()
 			Disable()
 		Mixer
 			Channels()
 				Volume
 					Set()
-					Increment()
-					Decrement()
+					Get()
 				Pan
 					Set()
-					Increment()
-					Decrement()
+					Get()
 				Solo
 					Enable
 					Disable
@@ -135,15 +114,13 @@ ScreenFlow
 			Set()
 			Value
 				Set()
-				Increment()
-				Decrement()
+				Get()
 		NoiseRemoval
 			Enable()
 			Disable()
 			Value
 				Set()
-				Increment()
-				Decrement()
+				Get()
 		Filters
 			Add()
 			Item()
@@ -217,9 +194,7 @@ But we’ll see what is available.
 * LIMITATIONS WITH APPLESCRIPT
 Before starting the project I knew very little about AppleScript. I’ve commonly used VBA, Python, Javascript, Lua, Ruby, Forth and Java. AppleScript, however, is a language unlike any I have seen before. It is very weird and obscure and to quote someone of reddit:
 
-“Look, nobody loves Applescript as a language. They love it for what it can do. I personally find it ugly and difficult, but it's a lot easier to write Applescript to automate some Mac apps than it is for me to write Objective C.”
-
-“Applescript is about getting things done, though, rather than elegance.”
+“Look, nobody loves Applescript as a language. They love it for what it can do. I personally find it ugly and difficult, but it's a lot easier to write Applescript to automate some Mac apps than it is for me to write Objective C.” ... “Applescript is about getting things done, though, rather than elegance.”
 
 Since people will likely be able to use applescript more than other programming languages and since AppleScript is extremely powerful (and not as limited as JXA), I will be continuing the project within applescript. However I will likely continue with the same kind of format. I.E.
 
