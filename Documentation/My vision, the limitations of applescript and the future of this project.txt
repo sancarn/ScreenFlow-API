@@ -1,0 +1,233 @@
+In this text file I wanted to outline my vision for this project. What I would like to come of it and also overview some of the issues I am currently having with making this project a reality.
+
+If I were to give a very brief overview of this project it would be:
+“To create a freely available, easy to use library of functions to control all functionality within ScreenFlow, that anyone can use for any reason.” Note: This may not be totally possible.
+
+For more details on this vision see below:
+
+* MY VISION: THE OBJECT MODEL
+One of the most important parts of any API/functions library is that it needs to have a good structure. It needs to be flexible, easy to use and organised. My original vision was to have it organised in a hierarchy. For example, here’s the Video and Audio menus:
+
+ScreenFlow
+	Video
+		Pos
+			X
+				Set()
+				Increment()
+				Decrement()	
+			Y
+				Set()
+				Increment()
+				Decrement()	
+		Rot
+			X
+				Set()
+				Increment()
+				Decrement()	
+			Y
+				Set()
+				Increment()
+				Decrement()	
+			Z
+				Set()
+				Increment()
+				Decrement()	
+		Opacity
+			Set()
+			Increment()
+			Decrement()
+		Crop
+			Left
+				Set()
+				Increment()
+				Decrement()	
+			Right
+				Set()
+				Increment()
+				Decrement()	
+			Bottom
+				Set()
+				Increment()
+				Decrement()	
+			Top
+				Set()
+				Increment()
+				Decrement()
+		Reflection
+			Enable()
+			Disable()
+			Value
+				Set()
+				Increment()
+				Decrement()	
+		Shadow()
+			Enable()
+			Disable()
+			Value
+				Angle
+					Set()
+					Increment()
+					Decrement()
+				Color
+					Set
+				Offset
+					Set()
+					Increment()
+					Decrement()
+				Opacity
+					Set()
+					Increment()
+					Decrement()
+				BlurSize
+					Set()
+					Increment()
+					Decrement()
+		Saturation
+			Set()
+			Increment()
+			Decrement()
+		Brightness
+			Set()
+			Increment()
+			Decrement()
+		Contrast
+			Set()
+			Increment()
+			Decrement()
+		Filters
+			params…
+
+	Audio
+		Activate()
+		Mute()
+		Unmute()
+		Normalise()
+		AddAction()
+		Reset()
+		Volume
+			Set()
+			Increment()
+			Decrement()
+		Ducking
+			Set()
+			Increment()
+			Decrement()
+			Enable()
+			Disable()
+		Mixer
+			Channels()
+				Volume
+					Set()
+					Increment()
+					Decrement()
+				Pan
+					Set()
+					Increment()
+					Decrement()
+				Solo
+					Enable
+					Disable
+				Analyser
+					Value?
+		Effects
+			Enable()
+			Disable()
+			Set()
+			Value
+				Set()
+				Increment()
+				Decrement()
+		NoiseRemoval
+			Enable()
+			Disable()
+			Value
+				Set()
+				Increment()
+				Decrement()
+		Filters
+			Add()
+			Item()
+				params…
+
+And this hierarchical structure would go on to cover all the different possibilities given by ScreenFlow. Now, say I had a video clip that I wanted to edit, I could do something like:
+
+ScreenFlow.Video.Pos.X = 100
+ScreenFlow.Video.Pos.Y = 25
+ScreenFlow.Video.Crop.Left = 10
+ScreenFlow.Video.Crop.Right = 27
+ScreenFlow.Video.Crop.Top = 5
+ScreenFlow.Video.Crop.Bottom = 9
+
+* SELECTING CLIPS:
+
+It would also be nice to be able to select multiple clips, though I am unsure how one would do that at the moment. If this were possible it would allow intervention like this:
+
+Set sfVideo1 = ScreenFlow.Content.ByName(“My life in Minecraft.mp4”)
+Set sfVideo2 = ScreenFlow.Content.ByName(“Your life in Minecraft.mp4”)
+
+
+sfVideo1.Video.Pos.X = 100
+sfVideo1.Video.Pos.Y = 25
+sfVideo1.Video.Crop.Left = 10
+sfVideo1.Video.Crop.Right = 27
+sfVideo1.Video.Crop.Top = 5
+sfVideo1.Video.Crop.Bottom = 9
+
+sfVideo2.Video.Pos.X = -100
+sfVideo2.Video.Pos.Y = 25
+sfVideo2.Video.Crop.Left = 10
+sfVideo2.Video.Crop.Right = 27
+sfVideo2.Video.Crop.Top = 5
+sfVideo2.Video.Crop.Bottom = 9
+
+Or this:
+
+For each sfVideo in ScreenFlow.Content do
+	sfVideo.Video.Pos.X = 100
+	sfVideo.Video.Pos.Y = 25
+	sfVideo.Video.Crop.Left = 10
+	sfVideo.Video.Crop.Right = 27
+	sfVideo.Video.Crop.Top = 5
+	sfVideo.Video.Crop.Bottom = 9
+End For
+
+It is likely however that this will require modifying the ScreenFlowDocument.DAT file. I have looked into this previously and it would likely be impossible unless Telestream made it possible (by either releasing some code to decrypt/uncompress it or by storing the files unencrypted/uncompressed). Otherwise it is likely we will have to stick to the cursor and modifying active objects at the cursor’s position, though even this is tricky.
+
+That would look something like this:
+
+set sfVideo = ScreenFlow.select(1)
+sfVideo.Video.Pos.X = 100
+sfVideo.Video.Pos.Y = 25
+sfVideo.Video.Crop.Left = 10
+sfVideo.Video.Crop.Right = 27
+sfVideo.Video.Crop.Top = 5
+sfVideo.Video.Crop.Bottom = 9
+
+set sfVideo = ScreenFlow.select(2)
+sfVideo.Video.Pos.X = -100
+sfVideo.Video.Pos.Y = 25
+sfVideo.Video.Crop.Left = 10
+sfVideo.Video.Crop.Right = 27
+sfVideo.Video.Crop.Top = 5
+sfVideo.Video.Crop.Bottom = 9
+
+But we’ll see what is available.
+
+
+* LIMITATIONS WITH APPLESCRIPT
+Before starting the project I knew very little about AppleScript. I’ve commonly used VBA, Python, Javascript, Lua, Ruby, Forth and Java. AppleScript, however, is a language unlike any I have seen before. It is very weird and obscure and to quote someone of reddit:
+
+“Look, nobody loves Applescript as a language. They love it for what it can do. I personally find it ugly and difficult, but it's a lot easier to write Applescript to automate some Mac apps than it is for me to write Objective C.”
+
+“Applescript is about getting things done, though, rather than elegance.”
+
+Since people will likely be able to use applescript more than other programming languages and since AppleScript is extremely powerful (and not as limited as JXA), I will be continuing the project within applescript. However I will likely continue with the same kind of format. I.E.
+
+ScreenFlow_Video_Pos_X_Set(100)
+ScreenFlow_Video_Pos_Y_Set(25)
+ScreenFlow_Video_Crop_Left_Set(10)
+ScreenFlow_Video_Crop_Right_Get(27)
+…
+
+Thanks to everyone on Reddit who has helped with this project so far!
+My next step will be making a VBA based AppleScript analysis programme which should real speed up building the library and make it a lot easier to update the library when required.
